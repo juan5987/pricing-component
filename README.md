@@ -13,4 +13,5 @@ The challenge is to build out this pricing component and get it looking as close
 ## RUN THE PROJECT
 
 clone the project: ```git clone https://github.com/juan5987/pricing-component.git```
-then run it: ```npm run start```
+  
+  then run it: ```npm run start```
