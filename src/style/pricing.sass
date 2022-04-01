@@ -1,0 +1,91 @@
+.pricing
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 3rem
+
+    &__container
+        background-color: white
+        padding: 2rem
+        color: #686a7f
+        height: min-content
+        max-width: 375px
+
+        &--left
+            border-radius: 10px 0 0 10px
+
+        &--middle
+            background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%))
+            color: white
+            padding: 3.5rem 2rem
+            border-radius: 10px
+
+        &--right
+            border-radius: 0 10px 10px 0
+
+        &__title
+            text-align: center
+            font-size: 1em
+            text-align: center
+
+        &__price
+            font-size: 3.8rem
+            color: #4b4d62
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 2rem
+
+            &--middle
+                color: white
+
+            &__symbol
+                font-size: 2rem
+                margin-right: 0.2em
+
+        &__details
+            border-top: 1px solid #dadada
+            font-size: 15px
+            padding: 1em
+            text-align: center
+
+            &:nth-last-child(2)                
+                border-bottom: 1px solid #dadada
+
+            &--middle
+                border-top: 1px solid #a4a9fc
+                font-size: 15px
+                padding: 1em
+                text-align: center
+
+                &:nth-last-child(2)
+                    border-bottom: 1px solid #a4a9fc
+
+        &__button
+            background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%))
+            color: white
+            padding: 1em
+            width: 100%
+            border: none
+            border-radius: 5px
+            text-transform: uppercase
+            font-weight: bold
+            letter-spacing: 1px
+            margin-top: 2rem
+
+            &:hover
+                cursor: pointer
+
+            &--middle
+                background: white
+                color: #7d7ec4
+
+
+@media all and (max-width: 900px)
+    .pricing
+        flex-direction: column
+
+        &__container
+            width: 100%
+            margin-bottom: 2rem
+            border-radius: 15px

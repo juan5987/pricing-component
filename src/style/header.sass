@@ -1,0 +1,38 @@
+.header
+    &__title
+        text-align: center
+        color: #6e6f8e
+        margin: 2rem auto
+
+    &__toggler
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 250px
+
+        &__container
+            background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%))
+            width: 50px
+            border-radius: 30px
+            padding: 0.2em
+
+            &__circle
+                width: 20px
+                height: 20px
+                border-radius: 50%
+                background-color: white
+                position: relative
+                transition: transform 0.1s ease-in
+
+                &:hover
+                    cursor: pointer
+
+                &--monthly
+                    left: 24px
+
+                &--annually
+                    left: 0
+
+
+        &__text
+            color: #b3b2c0
